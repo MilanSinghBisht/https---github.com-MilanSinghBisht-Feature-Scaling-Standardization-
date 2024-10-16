@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+ 
+# random
+data = np.random.randn(1000)
+ 
+#creating parts andr ke 
+sns.histplot(data, bins=30, kde=True, color='lightgreen', edgecolor='red')
+ 
+# labels
+plt.xlabel('Values')
+plt.ylabel('Density')
+plt.title('Customized Histogram with Density Plot')
+plt.show()
